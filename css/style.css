@@ -1,0 +1,173 @@
+img{
+    width: 45%;
+    font-size: 30px;
+    color: #0F0FFF;
+}
+h1 {
+    font-size: 42px;
+    text-align: center;
+    padding: 15px;
+    }
+h2 {
+    font-size: 30px;
+    color: #0F0FFF;
+    line-height: 2;
+}
+
+img {
+    width: 600px;
+    border: 5px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+body {
+    background-image: url("../images/womenpwr2.jpeg");
+    font-family: "Roboto", sans-serif;
+    opacity: 5;
+}
+
+  div {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+  }
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    opacity: 1;
+}
+
+@media (min-width: 300px) {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item {
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+    }
+
+    .item header {
+      margin-bottom: 0;
+    }
+}
+
+div:nth-child(2n) img{
+    border: 5px solid rgb(68, 211, 20);
+}
+
+
+nav ul li {
+    /* Set margin, padding, font-size */
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1.2em;
+
+    /* Set display property to inline-block*/
+    display: inline-block;
+    /* Add space between list items */
+    justify-content: space-between;
+    /* Set padding and background color */
+    padding: 10px;
+    background-color: #e3e7ea;
+    opacity: 0.9;
+}
+
+.active{
+    background-color: #f1eaea;
+}
+
+.center {
+    text-align: center;
+}
+
+.section {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    opacity: 0.8;
+  }
+
+.disclaimer {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    opacity: 0.8;
+}
+.skip-link {
+    position: absolute;
+    left: -999em;
+}
+.skip-link:focus {
+    position: static;
+    left: auto;
+    background-color: yellow;
+}
+
+  .footer {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    opacity: 0.8;
+}
+.animate-image {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: 1; /* changed to 1 */
+    animation-timing-function: linear;
+}
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-image {
+      animation: none;
+      transform: none;
+    }
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-item {
+    margin: 10px;
+    padding: 20px;
+    background-color: #eee;
+    border: 5px solid #ccc;
+    flex: 1;
+}
+
+.word-section {
+    border: 5px solid black;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
